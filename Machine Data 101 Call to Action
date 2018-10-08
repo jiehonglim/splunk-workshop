@@ -1,0 +1,44 @@
+Workshop Summary
+Understand how to use Splunk’s User interface
+Learn the Splunk search language
+Download, install and create Splunk apps
+Build searches, reports, visualizations and dashboards
+Customize dashboards with advanced inputs
+
+Feel empowered that you can derive value from your data
+Want to share your newfound knowledge with everyone
+Become a Splunk Ninja!
+
+Here’s a few ways to get started with splunk enterprise quickly.
+
+Free eLearning:
+https://www.splunk.com/en_us/training/courses/splunk-fundamentals-1.html
+
+Our quick reference guide to search & dashboard:
+https://www.splunk.com/pdfs/solution-guides/splunk-quick-reference-guide.pdf
+https://www.splunk.com/pdfs/solution-guides/splunk-dashboards-quick-reference-guide.pdf
+ 
+Quick 5 minutes videos:
+Basic Search with splunk: https://www.youtube.com/watch?v=xtyH_6iMxwA
+Creating Reports: https://www.youtube.com/watch?v=L-CnmXEXIug
+Creating Dashboards: https://www.youtube.com/watch?v=rnm1p5zZPXc
+Transforming Search: https://www.youtube.com/watch?v=wR_FdzfoFFA
+
+Others: https://www.youtube.com/user/splunkvideos/playlists
+
+Onboarding data to splunk
+Our Splunk Add-on Builder allows us to build any add-on to ingest data from almost any REST API endpoints
+-        http://dev.splunk.com/view/addon-builder/SP-CAAAE83
+
+Here’s our dev page:
+-        Sending data over http/https from application directly
+-        http://dev.splunk.com/view/event-collector/SP-CAAAE6M
+
+-        Our best practices of logging
+-        http://dev.splunk.com/view/logging/SP-CAAAFCH
+
+Some additional resources on Splunk with containers/micro services.
+-        https://conf.splunk.com/files/2017/slides/monitoring-docker-containers-with-splunk.pdf
+-        https://docs.docker.com/config/containers/logging/splunk/
+-        https://github.com/splunk/splunk-connect-for-kubernetes
+-        https://docs.fluentd.org/v1.0/articles/splunk-like-grep-and-alert-email
