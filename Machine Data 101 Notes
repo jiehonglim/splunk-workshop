@@ -1,0 +1,47 @@
+Splunk Machine Data Workshop 101 - Search Notes
+
+
+* | top limit=5 customer_name
+
+
+* | timechart avg(bytes)
+
+
+* | timechart avg(bytes) as AVG min(bytes) as MIN max(bytes) as MAX
+
+
+* | top limit=20 customer_name
+
+
+* | top limit=5 customer_name
+
+
+sourcetype="ri:pas:file" bytes=* 
+| erex doc_prefix examples="hhmoemld, syswqd"
+
+sourcetype="ri:pas:file" bytes=* 
+| rex "(?i) .*? (?P<doc_prefix>[a-z]+)(?=\.)”
+
+
+sourcetype="ri:pas:file" bytes=* 
+
+
+index=pas sourcetype=ri:pas:file user="*"
+| eval gigabytes=megabytes/1024
+| timechart useOther=F useNull=F sum(gigabytes) as Gigabytes by user
+
+
+index=pas | stats count by customer_name,command
+
+
+index=pas sourcetype="ri:pas:application" src_ip!="10.*" src_ip!="0.*"
+| stats count by src_ip,customer_name
+| sort – count
+| iplocation src_ip allfields=true
+| geostats count by customer_name
+
+
+index=pas | stats count
+
+
+index=pas | timechart useOther=F useNull=F count by customer_name
